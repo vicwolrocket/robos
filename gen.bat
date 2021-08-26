@@ -24,8 +24,10 @@ if exist repeat.txt FOR /F "tokens=* delims=" %%x in (repeat.txt) DO set repeat=
 color 02
 cls
 echo.
-set /a p=100/%robos%
-set /a p=%p%*%repeat%
+set /a p=%robos%/%repeat%
+
+set /a p=100/%p%
+
 
 echo %repeat%/%robos% images generated. %p% percent.
 echo.
