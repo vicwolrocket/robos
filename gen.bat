@@ -43,6 +43,10 @@ goto LOOPr )
 
 powershell -Command "Invoke-WebRequest https://robohash.org/%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%%RANDOM%/set_set4/bgset_bg%NUM% -Outfile %repeat%.png"
 ::set /p pause=pause?
+
+git add %repeat%.png
+git commit -a -m "New robohash cat by gen.bat - ID: %repeat%"
+
 if not %repeat%==%robos% goto repeat
 
 cd..
