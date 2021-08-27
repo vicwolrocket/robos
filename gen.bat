@@ -1,4 +1,5 @@
 @echo off
+title Kitty Generator
 set persentage=0
 cd assets
 cls
