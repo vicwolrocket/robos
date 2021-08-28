@@ -23,7 +23,7 @@ if exist repeat.txt FOR /F "tokens=* delims=" %%x in (repeat.txt) DO set repeat=
 set comrep=0
 
 :repeat
-
+pause
 set /a comrep=%comrep%+1
 color 02
 cls
